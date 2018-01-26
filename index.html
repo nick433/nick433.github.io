@@ -36,6 +36,7 @@
 }
 
 /* Popup arrow */
+
 .popup .popuptext::after {
     content: "";
     position: absolute;
@@ -74,16 +75,18 @@
 	<p hidden id='p1'>nick1191994@gmail.com </h2>
     <div class="links">
       <a href="projects.html">Projects</a>
-      <a href="//github.com/nick433/">Github</a>
-	  &nbsp;
+      <a href="//github.com/nick433/">Github</a> &nbsp;
       <div class="popup" onclick="copyToClipboard('#p1')"> 
 	  <!-- copyToClipboard('#p1') would be used to recycle text that appears on the page -->
 			<a>Email</a>
       
 		<span class="popuptext" id="myPopup">email copied to clipboard</span>
 		</div>
-	  <a href="resume1-18.pdf">Résumé</a>
-      <a>Drum lessons</a>
+	  <a href="resume1-18.pdf">Résumé</a>  &nbsp;
+	  <div class="popup" onclick="popUp()">
+			<a>Drum lessons</a>
+		<span class="popuptext" id="myPopup2">13 years of experience on drumset. Email me for availability and other information. Can be at my home or I can come to you if not to far.</span>
+		</div>
       <a href="https://www.linkedin.com/in/nicholas-mangracina-9bb469113/">LinkedIn</a>
       <!-- <a href="//linkedin.com/">LinkedIn</a> -->
     </div>
@@ -99,6 +102,11 @@ function copyToClipboard(element) {
 	$temp.val($(element).text()).select();
 	document.execCommand("copy");
 	$temp.remove();
+}
+
+function popUp() {
+    var popup = document.getElementById("myPopup2");
+    popup.classList.toggle("show");
 }
 </script>
 <script>
