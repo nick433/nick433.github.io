@@ -1,7 +1,1 @@
-@font-face {
-    font-family: Open Sans;
-    src: url(fonts/OpenSans-Regular.ttf);
-}
-body {
-    font-family: Open Sans;
-}
+@font-face{font-family:UTMBebas;src:url(utmbebas.ttf)}body{font-family:UTMBebas;
