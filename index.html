@@ -1,116 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <title>Nick Mangracina</title>
-
-  <!-- Styles -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<style>
-.popup {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-.popup .popuptext {
-    visibility: hidden;
-    width: 290px;
-    background-color: #555;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 7px 0;
-    position: absolute;
-    z-index: 1;
-    bottom: 107%;
-    left: -59%; 
-    margin-left: -80px;
-}
-
-.popup .popuptext::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #555 transparent transparent transparent;
-}
-
-.popup .show {
-    visibility: visible;
-    -webkit-animation: fadeIn 1s;
-    animation: fadeIn 1s;
-}
-
-@-webkit-keyframes fadeIn {
-    from {opacity: 0;} 
-    to {opacity: 1;}
-}
-
-@keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity:1 ;}
-}
-</style>
-<link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <div class="container">
-    <h1>Nick <span>Mangracina</span></h1>
-    <span class="hello">software • drums • poker • trading</span>
-	<p hidden id='p1'>n.mang433@gmail.com </h2>
-    <div class="links">
-      <a href="projects.html">Projects/CV</a>
-      <a href="//github.com/nick433/">Github&nbsp;&nbsp;</a> 
-      <div class="popup" onclick="copyToClipboard('#p1')"> 
-	  <!-- copyToClipboard('#p1') would be used to recycle text that appears on the page -->
-			<a>Email</a>
-      
-		<span class="popuptext" id="myPopup">email copied to clipboard</span>
-		</div>
-	  <a href="resume4-18-18.pdf">Résumé&nbsp;&nbsp;</a>  
-	  <div class="popup" onclick="popUp()">
-			<a>Drum lessons</a>
-		<span class="popuptext" id="myPopup2">No longer giving lessons since I finished college :)</span>
-		</div>
-      <a href="https://www.linkedin.com/in/nicholas-mangracina-9bb469113/">LinkedIn</a>
-      <!-- <a href="//linkedin.com/">LinkedIn</a> -->
-    </div>
-  </div>
-<!-- Scripts -->
-<script>
-// When the user clicks on div, open the popup
-function copyToClipboard(element) {
-    var popup = document.getElementById("myPopup");
-    popup.classList.toggle("show");
-	var $temp = $("<input>");
-	$("body").append($temp);
-	$temp.val($(element).text()).select();
-	document.execCommand("copy");
-	$temp.remove();
-}
-
-function popUp() {
-    var popup = document.getElementById("myPopup2");
-    popup.classList.toggle("show");
-}
-</script>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-80717628-1', 'auto');
-  ga('send', 'pageview');
-</script>
-</body>
-
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <title>Nick Mangracina</title>
+      <!-- Styles -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      <style>
+         .popup {
+         position: relative;
+         display: inline-block;
+         cursor: pointer;
+         -webkit-user-select: none;
+         -moz-user-select: none;
+         -ms-user-select: none;
+         user-select: none;
+         }
+         .popup .popuptext {
+         visibility: hidden;
+         width: 290px;
+         background-color: #555;
+         color: #fff;
+         text-align: center;
+         border-radius: 6px;
+         padding: 7px 0;
+         position: absolute;
+         z-index: 1;
+         bottom: 107%;
+         left: -59%; 
+         margin-left: -80px;
+         }
+         .popup .popuptext::after {
+         content: "";
+         position: absolute;
+         top: 100%;
+         left: 50%;
+         margin-left: -5px;
+         border-width: 5px;
+         border-style: solid;
+         border-color: #555 transparent transparent transparent;
+         }
+         .popup .show {
+         visibility: visible;
+         -webkit-animation: fadeIn 1s;
+         animation: fadeIn 1s;
+         }
+         @-webkit-keyframes fadeIn {
+         from {opacity: 0;} 
+         to {opacity: 1;}
+         }
+         @keyframes fadeIn {
+         from {opacity: 0;}
+         to {opacity:1 ;}
+         }
+      </style>
+      <link rel="stylesheet" href="styles.css">
+   </head>
+   <body>
+      <div class="container">
+         <h1>Nick <span>Mangracina</span></h1>
+         <span class="hello">software • drums • poker • trading</span>
+         <p hidden id='p1'>n.mang433@gmail.com 
+         </h2>
+         <div class="links">
+            <a href="projects.html">Projects/CV</a>
+            <a href="//github.com/nick433/">Github&nbsp;&nbsp;</a> 
+            <div class="popup" onclick="copyToClipboard('#p1')">
+               <!-- copyToClipboard('#p1') would be used to recycle text that appears on the page -->
+               <a>Email</a>
+               <span class="popuptext" id="myPopup">email copied to clipboard</span>
+            </div>
+            <a href="resume4-18-18.pdf">Résumé&nbsp;&nbsp;</a>  
+            <div class="popup" onclick="popUp()">
+               <a>Drum lessons</a>
+               <span class="popuptext" id="myPopup2">No longer giving lessons since I finished college :)</span>
+            </div>
+            <a href="https://www.linkedin.com/in/nicholas-mangracina-9bb469113/">LinkedIn</a>
+            <!-- <a href="//linkedin.com/">LinkedIn</a> -->
+         </div>
+      </div>
+      <!-- Scripts -->
+      <script>
+         // When the user clicks on div, open the popup
+         function copyToClipboard(element) {
+             var popup = document.getElementById("myPopup");
+             popup.classList.toggle("show");
+         	var $temp = $("<input>");
+         	$("body").append($temp);
+         	$temp.val($(element).text()).select();
+         	document.execCommand("copy");
+         	$temp.remove();
+         }
+         
+         function popUp() {
+             var popup = document.getElementById("myPopup2");
+             popup.classList.toggle("show");
+         }
+      </script>
+      <script>
+         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+         })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+         ga('create', 'UA-80717628-1', 'auto');
+         ga('send', 'pageview');
+      </script>
+   </body>
 </html>
