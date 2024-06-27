@@ -1,0 +1,100 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.5in,top=0.5in,right=0.5in,bottom=0.5in]{geometry} % Document margins
+\usepackage{hyperref}
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\name{Nicholas Mangracina} % Your name
+\address{(732)-850-0309 \hspace{0.3cm}  \hspace{0.3cm} n.mang433@gmail.com \hspace{0.3cm} \hspace{0.3cm} \href{https://nick433.github.io}{nick433.github.io} \hspace{0.3cm} \hspace{0.3cm} \href{https://www.linkedin.com/in/nicholas-mangracina/}{linkedin.com/in/nicholas-mangracina/} } % Your phone number and email
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL SKILLS SECTION
+%----------------------------------------------------------------------------------------
+\vspace{-4mm}
+\begin{rSection}{Technical Skills}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Languages & Java, Typescript, Javascript, HTML/CSS, C, C++, Python, SQL \\
+Frameworks & Spring Boot, React.js, Angular 9, 16, Kafka, Node.js, Selenium, Playwright \\
+Tools & Git, Eclipse, Chrome dev tools, VS code, AWS, Kubernetes, Docker, Jenkins \\
+\end{tabular}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	PROFESSIONAL EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Professional Experience}
+
+\vspace{2mm}
+
+\noindent\hspace{-1.5em}\begin{rSubsection}{\textbf{\large Wells Fargo} \normalfont \em Software Engineer}{Feb 2024 - current}{}{}
+\item Worked on migration efforts for ECAR system using Java Spring and Angular 16
+\item Wrote a Mock REST API with Spring to allow the frontend to be developed faster and independently of any updates from the legacy backend system
+\item Utilized Playwright with Cucumber and Gherkin syntax for automation testing
+\item Followed modern CI/CD using Sonarqube, Jenkins, AWS, with Terraform for configuration files
+\end{rSubsection}
+
+%------------------------------------------------
+
+\vspace{-1mm}
+\noindent\hspace{-1.5em}\begin{rSubsection}{\textbf{\large Morgan Stanley} \normalfont \em Software Engineer}{Sept 2021 - Sept 2023}{}{}
+\item Worked with Agile Scrum team using React.js and Spring Boot to extend client trading capabilities while also building out internal monitoring tools
+\item Delivered new functionality like fractional shares and rotational routing, allowing ETRADE to be competitive with newer modern brokers
+\item Identified inefficiencies in backend DAO with SURF system, reworked to lower runtime of JDBC calls
+\item Utilized Kafka for asynchronous communication of live trading data between microservices
+\end{rSubsection}
+
+%------------------------------------------------
+\vspace{-1mm}
+\noindent\hspace{-1.5em}\begin{rSubsection}{\textbf{\large Tata Consultancy Services (TCS)} \normalfont \em Software Engineer}{Jul 2018 - Sept 2021}{}{}
+\item[] \textbf{TCS internal - TAAP (Technical Architecture Assessment Platform)} \item
+Developed web portal for TCS customers to communicate with clients over project requirements
+\item Fetched API data and implemented logic for filtering and displaying data in dynamic tables
+\item Designed and developed UI with Ionic 4, backend with Spring Boot and PostgreSQL
+\vspace{2mm}
+\item[] \textbf{Nationwide (client project)} - \normalfont \em Software Engineer, Senior role  
+\vspace{0.5mm}
+\normalfont
+\item
+Developed and enhanced customer-facing account creation portal using Angular 9
+\item Added new functionality such as role-based actions/restrictions, automation of routine tasks
+\item Utilized Jenkins and Kubernetes for CI/CD pipeline to deploy services and apps with AWS
+\item Helped Jr team members troubleshoot API calls and resolve front-end bugs with browser dev tools, explained Angular concepts and enforced proper version control practices
+\vspace{2mm}
+\item[] \textbf{PwC (client project)} - \normalfont \em Software Engineer
+\vspace{0.5mm}
+\normalfont
+\item
+Migrated DMS (Data Maintenance System) from Lotus Notes desktop client to modern webapp
+\item Utilized MEAN stack in development - Angular 9, Node.js, with MongoDB noSQL database
+\item Continuous updating of webpages based off of wireframes and customer feedback
+\item Updated validation for new account openings, followed wireframes for developing new webpages
+\end{rSubsection}
+\vspace{-1mm}
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION AND EXTRAS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education and Extras}
+\vspace{1mm}
+{\bf Rutgers University, New Brunswick NJ (B.S.)} \hfill {2014 - 2018} 
+\\ Major in Computer Science
+\vspace{-1mm}
+\item \textbf{Developed Android App} with a friend to send alerts for crypto and stocks based on user’s parameters for volume and price. Built with Kotlin, SQLite for database (github.com/jimdc/TradeTracker)
+\vspace{-1mm}
+\item \textbf{Developed and published chrome extension} to assist with multi-tabling online poker - see full CV
+
+\end{rSection}
+
+\end{document}
